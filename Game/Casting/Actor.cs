@@ -43,38 +43,28 @@ namespace unit04_greed.Game.Casting
             return fontSize;
         }
 
-        /// <summary>
-        /// Gets the actor's position.
-        /// </summary>
+        
         /// <returns>The position.</returns>
         public Point GetPosition()
         {
             return position;
         }
 
-        /// <summary>
-        /// Gets the actor's text.
-        /// </summary>
+       
         /// <returns>The text.</returns>
         public string GetText()
         {
             return text;
         }
 
-        /// <summary>
-        /// Gets the actor's current velocity.
-        /// </summary>
+        
         /// <returns>The velocity.</returns>
         public Point GetVelocity()
         {
             return velocity;
         }
 
-        /// <summary>
-        /// Moves the actor to its next position according to its velocity. Will wrap the position 
-        /// from one side of the screen to the other when it reaches the maximum x and y 
-        /// values.
-        /// </summary>
+        
         /// <param name="maxX">The maximum x value.</param>
         /// <param name="maxY">The maximum y value.</param>
         public void MoveNext(int maxX, int maxY)
@@ -84,9 +74,7 @@ namespace unit04_greed.Game.Casting
             position = new Point(x, y);
         }
 
-        /// <summary>
-        /// Sets the actor's color to the given value.
-        /// </summary>
+        
         /// <param name="color">The given color.</param>
         /// <exception cref="ArgumentException">When color is null.</exception>
         public void SetColor(Color color)
@@ -98,9 +86,7 @@ namespace unit04_greed.Game.Casting
             this.color = color;
         }
 
-        /// <summary>
-        /// Sets the actor's font size to the given value.
-        /// </summary>
+        
         /// <param name="fontSize">The given font size.</param>
         /// <exception cref="ArgumentException">
         /// When font size is less than or equal to zero.
@@ -114,9 +100,7 @@ namespace unit04_greed.Game.Casting
             this.fontSize = fontSize;
         }
 
-        /// <summary>
-        /// Sets the actor's position to the given value.
-        /// </summary>
+        
         /// <param name="position">The given position.</param>
         /// <exception cref="ArgumentException">When position is null.</exception>
         public void SetPosition(Point position)
@@ -128,9 +112,7 @@ namespace unit04_greed.Game.Casting
             this.position = position;
         }
 
-        /// <summary>
-        /// Sets the actor's text to the given value.
-        /// </summary>
+        
         /// <param name="text">The given text.</param>
         /// <exception cref="ArgumentException">When text is null.</exception>
         public void SetText(string text)
@@ -142,9 +124,6 @@ namespace unit04_greed.Game.Casting
             this.text = text;
         }
 
-        /// <summary>
-        /// Sets the actor's velocity to the given value.
-        /// </summary>
         /// <param name="velocity">The given velocity.</param>
         /// <exception cref="ArgumentException">When velocity is null.</exception>
         public void SetVelocity(Point velocity)

@@ -4,29 +4,18 @@ using unit04_greed.Game.Casting;
 
 namespace unit04_greed.Game.Services
 {
-    /// <summary>
-    /// <para>Detects player input.</para>
-    /// <para>
-    /// The responsibility of a KeyboardService is to detect player key presses and translate them 
-    /// into a point representing a direction.
-    /// </para>
-    /// </summary>
-    public class KeyboardService
+        public class KeyboardService
     {
         private int cellSize = 15;
 
-        /// <summary>
-        /// Constructs a new instance of KeyboardService using the given cell size.
-        /// </summary>
+       
         /// <param name="cellSize">The cell size (in pixels).</param>
         public KeyboardService(int cellSize)
         {
             this.cellSize = cellSize;
         }
 
-        /// <summary>
-        /// Gets the selected direction based on the currently pressed keys.
-        /// </summary>
+        
         /// <returns>The direction as an instance of Point.</returns>
         public Point GetDirection()
         {
@@ -43,8 +32,6 @@ namespace unit04_greed.Game.Services
                 dx = 1;
             }
 
-            //if (Raylib.IsKeyDown(KeyboardKey.KEY_UP)){dy = -1;}
-            //if (Raylib.IsKeyDown(KeyboardKey.KEY_DOWN)){dy = 1;}
 
             Point direction = new Point(dx, dy);
             direction = direction.Scale(cellSize);
@@ -52,9 +39,6 @@ namespace unit04_greed.Game.Services
             return direction;
         }
 
-        /// <summary>
-        /// Keeps Artifacts in motion.
-        /// </summary>
         /// <returns>The direction as an instance of Point.</returns>
         public Point MoveArtifact()
         {

@@ -52,7 +52,7 @@ namespace unit04_greed
             for (int i = 0; i < DEFAULT; i++)
             {
                 string text = ((char)(42)).ToString();
-                //string message = messages[i];
+                
 
                 int x = random.Next(1, COLS);
                 int y = random.Next(1, ROWS);
@@ -76,7 +76,7 @@ namespace unit04_greed
             for (int i = 0; i < DEFAULT; i++)
             {
                 string text = ((char)(111)).ToString();
-                //string message = messages[i];
+               
 
                 int x = random.Next(1, COLS);
                 int y = random.Next(1, ROWS);
